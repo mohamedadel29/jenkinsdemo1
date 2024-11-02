@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('scm checkout') {
+            steps {
+                echo 'completed'
+            }
+        }
+        stage('bulid checkout') {
+            steps {
+                echo 'bulid completed'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'test completed'
+            }
+        }
+        stage('deploy ') {
+            steps {
+                echo 'deploy completed'
+            }
+        }
+    }
+}
